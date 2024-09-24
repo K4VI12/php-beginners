@@ -5,6 +5,6 @@ require 'functions.php';
 require 'Database.php';
 
 $db = new Database();
-$posts = $db->query("select * from post")->fetchAll(PDO::FETCH_ASSOC);
+$posts = $db->query("select * from post")->fetchAll(); //" :: " give to acces to static or constant define class
 
 dd($posts);
