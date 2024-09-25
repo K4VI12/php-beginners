@@ -3,7 +3,8 @@
 require 'Validator.php';
 
 
-$config = require('config.php');
+$config = require base_path('config.php');
+
 $db = new Database($config['database']);
 
 
