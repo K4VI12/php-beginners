@@ -1,13 +1,12 @@
 <?php
 
-const BASE_PATH = __DIR__. '/../'; //declare constant
+const BASE_PATH = __DIR__ . '/../'; //declare constant
 
 
-require BASE_PATH. 'functions.php';
+require BASE_PATH . 'functions.php';
 
 
-spl_autoload_register(function ($class) 
-{
+spl_autoload_register(function ($class) {
     require base_path($class . '.php');
 });
 

@@ -1,7 +1,7 @@
 <?php
 
 
-
 view("index.view.php", [
-    'heading'=> 'Home',
+    'heading' => 'Home',
+    
 ]);
