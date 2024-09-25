@@ -19,9 +19,10 @@ if(! $note){
     abort();
 }
 
+$currentUserId = 1;
 
-if($note['user_id'] != 1){ //1 means in signify the current user
-    abort(403);
+if($note['user_id'] != $currentUserId){ //1 means in signify the current user
+    abort(Responce::FORBIDDEN);
 }
 
 
