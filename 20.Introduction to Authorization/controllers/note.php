@@ -6,6 +6,7 @@ $db = new Database($config['database']);
 
 
 $heading = 'Note';
+$currentUserId = 1;
 
 $id = $_GET['id'];
 
@@ -19,7 +20,7 @@ if(! $note){
     abort();
 }
 
-$currentUserId = 1;
+
 
 if($note['user_id'] != $currentUserId){ //1 means in signify the current user
     abort(Responce::FORBIDDEN);
