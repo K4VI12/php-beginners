@@ -13,9 +13,8 @@ function urlIs($value) {
     return $_SERVER['REQUEST_URI'] === $value;
 }
 
-
-function authorize($connection, $status = Responce ::FORBIDDEN){
-    if(! $connection){
+function authorize($condition, $status = Response::FORBIDDEN) {
+    if (! $condition) {
         abort($status);
     }
 }
