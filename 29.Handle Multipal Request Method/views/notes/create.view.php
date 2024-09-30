@@ -22,8 +22,7 @@
                                         rows="3"
                                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                         placeholder="Here's an idea for a note..."
-                                    ><?= $_POST['body'] ?? '' ?>
-                                </textarea>
+                                    ><?= $_POST['body'] ?? '' ?></textarea>
 
                                     <?php if (isset($errors['body'])) : ?>
                                         <p class="text-red-500 text-xs mt-2"><?= $errors['body'] ?></p>
